@@ -1,5 +1,6 @@
 import './Banner.css';
-function Banner() {
+
+export const Banner = () => {
     // JSX - JavaScript XML
     // Parece HTML, mas é JavaScript e como o react ler e transforma em HTML
     return (
@@ -8,5 +9,3 @@ function Banner() {
         </header>
     )
 }
-
-export default Banner
