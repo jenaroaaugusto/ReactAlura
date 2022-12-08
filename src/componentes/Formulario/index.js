@@ -17,14 +17,21 @@ const Formulario = () => {
     
   ];
 
+  const aoSalvar = ( event ) => {
+    event.preventDefault();
+    console.log("Salvando...");
+    console.log(event)
+    console.log(event.target)
+  }
+
   return (
     <section className = "formulario">
-      <form>
+      <form onSubmit = {aoSalvar} >
         <h2>Preencha os dados para criar o card do colaborador.</h2>
-        <CampoTexto label="Nome" placeholder="Digite o seu nome" />
-        <CampoTexto label="Cargo" placeholder="Digite o seu cargo" />
-        <CampoTexto label="Imagem" placeholder="Digite o endereço da imagem" />
-        <ListaSuspensa label="Time" itens={time} />
+        <CampoTexto required = {true} label="Nome" placeholder="Digite o seu nome" />
+        <CampoTexto required = {true} label="Cargo" placeholder="Digite o seu cargo" />
+        <CampoTexto required = {true} label="Imagem" placeholder="Digite o endereço da imagem" />
+        <ListaSuspensa required = {true} label="Time" itens={time} />
         <Botao> 
         Criar card
         </Botao>
