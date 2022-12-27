@@ -13,10 +13,16 @@ const Formulario = ( props ) => {
 
   const aoSalvar = (event) => {
     event.preventDefault();
-    console.log("Salvando...");
-    console.log("Valores do campo",nome, cargo, imagem);
-    console.log("Time", time);
-    props.aoColaboradorCadastrado({nome, cargo, imagem, time});
+    props.aoColaboradorCadastrado({
+      nome, 
+      cargo, 
+      imagem, 
+      time
+    });
+    setNome('')
+    setCargo('')
+    setImagem('')
+    setTime('')
   };
 
   return (

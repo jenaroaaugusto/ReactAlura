@@ -1,10 +1,10 @@
 import './Colaborador.css'
 
-const Colaborador = ({imagem, nome, cargo}) =>{
+const Colaborador = ({imagem, nome, cargo, corDeFundo}) =>{
 
     return (
         <div className='colaborador'>
-            <div className='cabecalho'>
+            <div className='cabecalho' style={{backgroundColor:corDeFundo}}>
                 <img src={imagem} alt={nome +' imagem'}/>
             </div>
             <div className='rodape' >
@@ -15,5 +15,5 @@ const Colaborador = ({imagem, nome, cargo}) =>{
         </div>
     )
 }
-// https://github.com/jenaroaaugusto.png
+
 export default Colaborador

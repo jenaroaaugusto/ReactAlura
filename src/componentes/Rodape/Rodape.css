@@ -1,0 +1,31 @@
+.footer {
+    display: flex;
+    background: #6278F7;
+    height: auto;
+    justify-content: space-between;
+    padding: 30px 0;
+   
+
+}
+.footer .social-media{
+    display: flex;
+    align-items: center;
+
+}
+.footer .logo{
+    /* border: 1px solid #ddd; */
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+.footer .text{
+    color: #FFFFFF;    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    align-items: center;
+    text-align: right;
+    margin-right: 20px;
+}
